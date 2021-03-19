@@ -2,66 +2,71 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Yantramanav&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 <title>Responsive css</title>
 </head>
 <body>
     <header>
-        <h1>Maartje Schreijenberg</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class = "introduction">
+        <div>
+        <h1>Student Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id = "introduction">
+            <img src="images/responsive-layout-profile.png">
             <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and
                 am excited to put all my skills to use!
             </p>
-            <img src="images/responsive-layout-profile.png">
+            
         </div>
     </header>
     <main>
         <div id = "portfolio">
-            <h2 >Portfolio</h2>
+            <h2 class="section-heading">Portfolio</h2>
             <article>
                 <img src = "images/portfolio-1.png">
                 <h2>Marketing Page</h2>
-                <p>Bla bla</p>
+                <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
             </article>
             <article>
                 <img src = "images/portfolio-2.png">
                 <h2>Search Page</h2>
-                <p>Bla bla</p>
+                <p>This project searches through a specific database to find information that the user is trying to look up.</p>
             </article>
             <article>
                 <img src = "images/portfolio-3.png">
                 <h2>Travel app</h2>
-                <p>Bla bla</p>
+                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
             </article>
             <article>
                 <img src = "images/portfolio-4.png">
                 <h2>Map of Favorite Spots</h2>
-                <p>Bla bla</p>
+                <p>This project uses mapping apis to plot points from my favorite spots in the city for a do-it-yourself walking tour.</p>
             </article>
             <article>
                 <img src = "images/portfolio-5.png">
                 <h2>Photo Gallery</h2>
-                <p>Bla bla</p>
+                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photo's.</p>
             </article>
             <article>
                 <img src = "images/portfolio-6.png">
                 <h2>Calculator</h2>
-                <p>Bla bla</p>
+                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
             </article>
         </div>
 
         <div id ="contact">
-            <h2>Contact</h2>
+            <h2 class="section-heading">Contact</h2>
             <p>If you're interessted in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p>Phone: </p>
-            <p>Email: test@test.nl</p>
+            <p>Phone: <b>+31 134567890</b> </p>
+            <p>Email: <b>test@test.nl</b></p>
         </div>
 
     </main>
@@ -70,8 +75,5 @@
         <a href="#">Back to top</a>
 
     </footer>
-
-<p>This is a paragraph.</p>
-
 </body>
 </html>
