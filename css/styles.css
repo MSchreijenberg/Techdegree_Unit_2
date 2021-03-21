@@ -1,6 +1,5 @@
 *{
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 body{
@@ -27,11 +26,9 @@ header img{
 }
 
 nav li{
-  /* display: block; */
   background-color: white;
   padding: .8em;
   margin: 5px;
-  /* width: auto; */
   text-align: center;
   font-size: 1em;
   font-family: 'Source Sans Pro', sans-serif;
@@ -51,6 +48,10 @@ a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+header p{
+    font-size: 24px;
 }
 
 h1, h2{
@@ -73,20 +74,15 @@ main{
     
 }
 
-#portfolio{
-    display: flex;
-    flex-direction: column;
+#portfolio, #skills{
     background-color: rgb(255, 255, 255);
     padding: 1.5em;
     }
 
 article{
-   
-    width: auto;
-    padding: 2px;
+    padding: 5px;
     margin-top: 20px;
-    text-align: center;
-}
+ }
 
 article img{
   width: 100%;
@@ -97,6 +93,10 @@ margin-bottom: 40px;
 font-family: 'Source Sans Pro', sans-serif;
 text-transform: uppercase;
 color: rgb(59, 59, 59);
+}
+
+.skills{
+    max-width: 300px;
 }
 
 #contact{
@@ -119,17 +119,55 @@ footer{
     
 }
 
+#footer-nav{
+    display: none;
+
+}
+
 @media (min-width: 768px){
 
+    #top-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #introduction{
         flex-direction: row-reverse;
-        align-items: flex-start;
-        justify-content: space-between;
         text-align: start;
-        flex: 1;
     }
     header img{
-        margin: 0;
+        margin: 0 0 0 20px;
+    }
+
+    #portfolio-articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article{
+        width: 50%;       
+     }
+
+    #footer-nav{
+        display: flex;
+    }
+
+    #footer-nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        display: flex;
+     }
+
+    nav li{
+        background: none;
+    }
+
+    #back-to-top{
+        display: none;
     }
 }
 
@@ -137,17 +175,10 @@ footer{
 
     #top-bar{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin: 20px;
-        }
-
-    nav ul{
-       display: flex;
-    }
-
-    nav li{
-        background: none;
-    }
+        }   
 
     #portfolio-articles{
         display: flex;
@@ -160,10 +191,7 @@ footer{
         
     }
 
-    footer a{
-        display: none;
-
-    }
+   
 
    
 }
